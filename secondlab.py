@@ -18,6 +18,4 @@ params={'q': s_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
 data = res.json()
 print("Прогноз погоды на неделю:")
 for i in data['list']:
-print("Дата <", i['dt_txt'], "> \r\nТемпература <",
-'{0:+3.0f}'.format(i['main']['temp']), "> \r\nПогодные условия <",
-i['weather'][0]['description'], ">")
+    print("Дата <", i['dt_txt'], "> \r\nТемпература <",'{0:+3.0f}'.format(i['main']['temp']), "> \r\nПогодные условия <",i['weather'][0]['description'], ">")
